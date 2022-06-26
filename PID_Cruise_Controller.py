@@ -36,6 +36,9 @@ x1=[0,1000]
 y1=[60,60]
 
 # plot the graph using Matplotlib library
-plt.plot(time,velocity)
+plt.plot(time,velocity,label="Velocity")
 plt.plot(x1,y1,label="reference line")
+plt.xlabel('Time')
+plt.ylabel('Velocity')
+plt.legend(["velocity","reference line"])
 plt.show()
